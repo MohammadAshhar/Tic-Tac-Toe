@@ -1,0 +1,43 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="board-wrap">
+      <div class="game" role="grid" aria-label="tic tac toe board">
+        <button class="box" data-index="0" aria-label="cell 0" ></button>
+        <button class="box" data-index="1" aria-label="cell 1" ></button>
+        <button class="box" data-index="2" aria-label="cell 2" ></button>
+        <button class="box" data-index="3" aria-label="cell 3" ></button>
+        <button class="box" data-index="4" aria-label="cell 4" ></button>
+        <button class="box" data-index="5" aria-label="cell 5" ></button>
+        <button class="box" data-index="6" aria-label="cell 6" ></button>
+        <button class="box" data-index="7" aria-label="cell 7" ></button>
+        <button class="box" data-index="8" aria-label="cell 8" ></button>
+      </div>
+
+      <div class="controls">
+        <div class="status" id="turnStatus">Turn: <strong id="turnText">O</strong></div>
+        <button class="ctrl" id="reset">Reset</button>
+        <button class="ctrl" id="new">New Game</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="message" role="dialog" aria-live="polite">
+      <p id="msg">Winner</p>
+      <div class="sub" id="submsg">Sub message</div>
+      <button id="overlayBtn">New Game</button>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
